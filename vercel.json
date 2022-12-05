@@ -11,11 +11,5 @@
             "source": "/(.*)",
             "destination": "/"
         }
-    ],
-    "rewrites": [
-        {
-            "source": "/api/(.*)",
-            "destination": "/api"
-        }
     ]
 }
