@@ -25,7 +25,8 @@ app.get("/api/currency/nbu", async (req, res) => {
   const response = await fetch(url);
   const data = await response.text();
 
-  res.send(`<div>${data}</div> `);
+  // res.send(`<div>${data}</div> `);
+  return res.send(`<div>${data}</div> `);
 });
 
 module.exports = app;
