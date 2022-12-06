@@ -7,6 +7,7 @@ const app = express();
 const url = "https://bank.gov.ua/NBU_Exchange/exchange?json";
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/api", (req, res) => {
   const path = `/api/item/${v4()}`;
